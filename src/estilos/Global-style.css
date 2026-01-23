@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+:root {
+
+  /* 🖤 Fundos */
+  --color-bg-900: #0D1117; /* fundo principal escuro */
+  --color-bg-800: #161B22; /* fundo seção */
+  --color-bg-700: #21262D; /* fundo cards / blocos */
+
+  /* ⚪ Textos */
+  --color-text-primary: #C9D1D9; /* texto principal */
+  --color-text-secondary: #8B949E; /* texto secundário */
+
+  /* 🔵 Destaques / Links */
+  --color-accent-blue: #58A6FF; /* cor de links e botões */
+  --color-accent-blue-hover: #79C0FF; /* hover de botão/link */
+
+  /* 🟢 Sucesso / status positivo */
+  --color-success: #3FB950;
+
+  /* 🔴 Erros / alertas */
+  --color-error: #D73A49;
+
+}
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
