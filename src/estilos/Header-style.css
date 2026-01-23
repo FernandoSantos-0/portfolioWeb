@@ -1,2 +1,92 @@
 @charset "UTF-8";
 
+#header-cima {
+
+    background-color: var(--fundo-secao);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+    height: 100px;
+
+}
+
+#header-cima h1 {
+
+    color: var(--color-text-primary);
+    font-size: 1.9em;
+
+}
+
+#header-cima h1 a {
+
+    text-decoration: none;
+    color: var(--color-text-primary);
+    transition: color 0.5s;
+
+}
+
+#header-cima h1 a:hover {
+
+    color: var(--color-accent-blue-hover);
+
+}
+
+#menu nav{
+
+    display: flex;
+    gap: 10px;
+
+}
+
+#menu a {
+
+    color: var(--color-accent-blue);
+
+    text-decoration: none;
+    font-size: 1.2em;
+    
+    transition: color 0.5s
+
+}
+
+#menu nav:hover a {
+
+    color: var(--color-text-secondary);
+
+}
+
+#menu nav a:hover {
+
+    color: var(--color-accent-blue);
+
+ }
+
+#header-baixo {
+
+    background-image: linear-gradient(to bottom, var(--fundo-secao), var(--fundo-principal-escuro));
+
+
+    height: 400px;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#header-baixo h1 {
+
+    color: var(--color-text-primary);
+    font-size: 6em;
+    text-align: center;
+}
+
+#header-baixo p {
+
+    color: var(--color-text-primary);
+    font-size: 2em;
+    text-align: center;
+
+}

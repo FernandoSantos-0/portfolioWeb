@@ -3,9 +3,9 @@
 :root {
 
   /* 🖤 Fundos */
-  --color-bg-900: #0D1117; /* fundo principal escuro */
-  --color-bg-800: #161B22; /* fundo seção */
-  --color-bg-700: #21262D; /* fundo cards / blocos */
+  --fundo-principal-escuro: #0D1117; 
+  --fundo-secao: #161B22;
+  --fundo-cards: #21262D; 
 
   /* ⚪ Textos */
   --color-text-primary: #C9D1D9; /* texto principal */
@@ -28,5 +28,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
+}
+
+body {
+
+    background-color: var(--fundo-principal-escuro);
 
 }
