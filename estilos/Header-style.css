@@ -9,7 +9,7 @@
     align-items: center;
     gap: 10px;
 
-    height: 100px;
+    height: 20vh;
 
 }
 
@@ -37,13 +37,13 @@
 #menu nav{
 
     display: flex;
-    gap: 10px;
+    gap: 30px;
 
 }
 
 #menu a {
 
-    color: var(--color-accent-blue);
+    color: var(--color-accent-blue-hover);
 
     text-decoration: none;
     font-size: 1.2em;
@@ -68,8 +68,7 @@
 
     background-image: linear-gradient(to bottom, var(--fundo-secao), var(--fundo-principal-escuro));
 
-
-    height: 400px;
+    height: 80vh;
     padding-top: 150px;
     padding-left: 20px;
     padding-right: 20px;
@@ -90,3 +89,33 @@
     text-align: center;
 
 }
+
+
+#btn-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#btn-menu span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--color-text-primary);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+#btn-menu.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+#btn-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+#btn-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+

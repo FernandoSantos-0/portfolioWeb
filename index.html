@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fernando Pereira | Desenvolvedor Back-end</title>
+    <link rel="stylesheet" href="estilos/Global-style.css" />
+    <link rel="stylesheet" href="estilos/Header-style.css" />
+    <link rel="stylesheet" href="estilos/Main-style.css" />
+    <link rel="stylesheet" href="estilos/Footer-style.css" />
+    <link rel="stylesheet" href="estilos/MediaQuerrys.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="header-cima">
+        <h1 id="nome-menu"><a href="#">FernandoSantos.</a></h1>
+
+        <menu id="menu">
+          <button id="btn-menu" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav id="item">
+            <a href="#">Home</a>
+            <a href="#">Perícia</a>
+            <a href="#">Trabalhos</a>
+            <a href="#">Experiência</a>
+            <a href="#">Contatos</a>
+          </nav>
+        </menu>
+      </div>
+
+      <div id="header-baixo">
+        <h1>Fernando Santos</h1>
+        <p>
+          Estudante de Ciência da Computação, com foco em desenvolvimento
+          Back-end.
+        </p>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+
+    <script>
+      const btnMenu = document.getElementById("btn-menu");
+      const nav = document.getElementById("item");
+
+      btnMenu.addEventListener("click", () => {
+        btnMenu.classList.toggle("open");
+        nav.classList.toggle("open");
+      });
+
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          btnMenu.classList.remove("open");
+          nav.classList.remove("open");
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        const btnMenu = document.getElementById("btn-menu");
+        const nav = document.getElementById("item");
+
+        const clicouNoMenu = nav.contains(e.target);
+        const clicouNoBotao = btnMenu.contains(e.target);
+
+        if (!clicouNoMenu && !clicouNoBotao) {
+          btnMenu.classList.remove("open");
+          nav.classList.remove("open");
+        }
+      });
+    </script>
+  </body>
+</html>
