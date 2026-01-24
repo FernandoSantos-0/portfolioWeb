@@ -11,6 +11,7 @@
 
     height: 20vh;
 
+
 }
 
 #header-cima h1 {
@@ -65,13 +66,15 @@
  }
 
 #header-baixo {
-
-    background-image: linear-gradient(to bottom, var(--fundo-secao), var(--fundo-principal-escuro));
+    
+    background: url("../imagens/Estrutura Futurista Abstracta.png") center / contain no-repeat, linear-gradient(to bottom, var(--fundo-secao), var(--fundo-principal-escuro));
 
     height: 80vh;
     padding-top: 150px;
     padding-left: 20px;
     padding-right: 20px;
+
+    background-size: cover;
 
 }
 
@@ -80,6 +83,7 @@
     color: var(--color-text-primary);
     font-size: 6em;
     text-align: center;
+
 }
 
 #header-baixo p {
@@ -87,6 +91,7 @@
     color: var(--color-text-primary);
     font-size: 2em;
     text-align: center;
+    padding-top: 20px;
 
 }
 
