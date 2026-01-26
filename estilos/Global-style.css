@@ -3,25 +3,27 @@
 :root {
 
     --branco: #ffffff;
+    --preto: #000000;
 
-  /* 🖤 Fundos */
-  --fundo-principal-escuro: #0D1117; 
-  --fundo-secao: #161B22;
-  --fundo-cards: #21262D; 
 
-  /* ⚪ Textos */
-  --color-text-primary: #C9D1D9; /* texto principal */
-  --color-text-secondary: #8B949E; /* texto secundário */
+    --fundo-principal-escuro: #0D1117; 
+    --fundo-secao: #161B22;
+    --fundo-cards: #21262D; 
 
-  /* 🔵 Destaques / Links */
-  --color-accent-blue: #58A6FF; /* cor de links e botões */
-  --color-accent-blue-hover: #79C0FF; /* hover de botão/link */
 
-  /* 🟢 Sucesso / status positivo */
-  --color-success: #3FB950;
+    --color-text-primary: #C9D1D9; 
+    --color-text-secondary: #8B949E; 
+    --color-accent-blue: #58A6FF; 
+    --color-accent-blue-hover: #79C0FF;
 
-  /* 🔴 Erros / alertas */
-  --color-error: #D73A49;
+    --color-success: #3FB950;
+
+
+    --color-error: #D73A49;
+
+    --cor-footer1: #0A2540;
+    --cor-footer2: #1F6FEB; 
+    --cor-footer3: #647eb8;
 
 }
 
