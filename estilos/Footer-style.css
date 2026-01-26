@@ -5,7 +5,7 @@ footer {
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 
-  height: 600px;
+  height: 700px;
 
   color: var(--color-text-primary);
   font-size: clamp(1.2em, 1.5em, 2em);
@@ -24,7 +24,7 @@ footer {
 
 #footer-email:hover {
   color: var(--branco);
-  box-shadow: inset 0px -20px 0px var(--cor-footer2);
+  box-shadow: inset 0px -50px 0px var(--cor-footer2);
 }
 
 div#Links-Rede-Social nav a {
