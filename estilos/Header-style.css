@@ -67,7 +67,7 @@
 
 #header-baixo {
     
-    background: url("../imagens/Estrutura Futurista Abstracta.png") center / contain no-repeat, linear-gradient(to bottom, var(--fundo-secao), var(--fundo-principal-escuro));
+    background: url("../imagens/background.png") center / contain no-repeat, linear-gradient(to bottom, var(--fundo-secao), var(--fundo-principal-escuro));
 
     height: 80vh;
     padding-top: 150px;
