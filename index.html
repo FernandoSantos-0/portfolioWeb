@@ -45,7 +45,33 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <article id="conhecimento"></article>
+
+      <article id="trabalho"></article>
+
+      <article id="experiencias">
+        <h1>Profissional Experiência</h1>
+
+        <details class="caixa-experiencia">
+          <summary class="nome-experiencia">
+            <p>Sem Experiência Previa.</p>
+            <div id="emoji"><i class="fa-solid fa-plus"></i></div>
+          </summary>
+          <div class="conteudo">
+            <p class="texto-experiencia">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              ab beatae voluptate quia, error, impedit aliquid culpa tempora
+              provident quas aut explicabo soluta voluptates facilis, odit unde
+              quisquam nostrum numquam? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Laboriosam laborum sequi molestiae placeat est
+              nulla sapiente velit voluptate aspernatur aliquid labore deserunt
+              tempora eaque ab, nobis id enim repellat magnam.
+            </p>
+          </div>
+        </details>
+      </article>
+    </main>
 
     <footer>
       <div id="Links-Rede-Social">
@@ -114,6 +140,64 @@
         if (!clicouNoMenu && !clicouNoBotao) {
           btnMenu.classList.remove("open");
           nav.classList.remove("open");
+        }
+      });
+
+      document.querySelectorAll(".caixa-experiencia").forEach((details) => {
+        const summary = details.querySelector("summary");
+        const content = details.querySelector(".conteudo");
+
+        let isClosing = false;
+        let isOpening = false;
+
+        summary.addEventListener("click", (e) => {
+          e.preventDefault(); // 🔑 impede o toggle automático
+
+          if (details.open && !isClosing) {
+            close();
+          } else if (!details.open && !isOpening) {
+            open();
+          }
+        });
+
+        function open() {
+          isOpening = true;
+          details.open = true;
+
+          content.style.height = "0px";
+          const height = content.scrollHeight;
+
+          requestAnimationFrame(() => {
+            content.style.height = height + "px";
+          });
+
+          content.addEventListener(
+            "transitionend",
+            () => {
+              content.style.height = "auto";
+              isOpening = false;
+            },
+            { once: true },
+          );
+        }
+
+        function close() {
+          isClosing = true;
+
+          content.style.height = content.scrollHeight + "px";
+
+          requestAnimationFrame(() => {
+            content.style.height = "0px";
+          });
+
+          content.addEventListener(
+            "transitionend",
+            () => {
+              details.open = false;
+              isClosing = false;
+            },
+            { once: true },
+          );
         }
       });
     </script>

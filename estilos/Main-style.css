@@ -1,8 +1,72 @@
 @charset "UTF-8";
 
 main {
+  background-color: var(--fundo-principal-escuro);
 
-    background-color: var(--fundo-principal-escuro);
-    height: 1000px;
+  grid-template-columns: auto 90vw auto;
+  grid-template-rows: auto auto auto;
+}
 
+article#experiencias > h1 {
+  color: var(--color-text-primary);
+  font-size: clamp(2.5em, 2em, 3em);
+  text-align: center;
+}
+
+article#experiencias .caixa-experiencia {
+  color: var(--color-text-primary);
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+
+article#experiencias .nome-experiencia {
+  color: var(--color-text-primary);
+  background-color: var(--color-box);
+
+  max-width: 40vw;
+
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-size: clamp(1.3em, 1em, 1.5em);
+
+  transition: 0.5s;
+}
+
+.nome-experiencia #emoji {
+  color: var(--color-text-primary);
+}
+
+#emoji:hover {
+  color: var(--color-accent-blue-hover);
+}
+
+article#experiencias .caixa-experiencia[open] .nome-experiencia {
+  background-color: var(--color-box-hover);
+}
+
+.conteudo {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.4s ease;
+}
+
+article#experiencias .texto-experiencia {
+  color: var(--color-text-primary);
+  background-color: var(--fundo-cards);
+
+  max-width: 60vw;
+
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
 }
