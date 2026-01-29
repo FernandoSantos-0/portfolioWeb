@@ -16,20 +16,19 @@ article#experiencias > h1 {
 article#experiencias .caixa-experiencia {
   color: var(--color-text-primary);
   overflow: hidden;
-  padding-bottom: 200px;
 }
 
 article#experiencias .nome-experiencia {
   color: var(--color-text-primary);
   background-color: var(--color-box);
 
-  max-width: 40vw;
+  max-width: 50vw;
 
   border-radius: 5px;
   margin: auto;
-  padding: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  padding: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 
   cursor: pointer;
 
@@ -37,7 +36,7 @@ article#experiencias .nome-experiencia {
   flex-direction: row;
   justify-content: space-between;
 
-  font-size: clamp(1.3em, 1em, 1.5em);
+  font-size: clamp(1em, 1.5em, 2.5em);
 
   transition: 0.5s;
 }
@@ -46,7 +45,7 @@ article#experiencias .nome-experiencia {
   color: var(--color-text-primary);
 }
 
-#emoji:hover {
+.nome-experiencia:hover #emoji{
   color: var(--color-accent-blue-hover);
 }
 
@@ -64,9 +63,11 @@ article#experiencias .texto-experiencia {
   color: var(--color-text-primary);
   background-color: var(--fundo-cards);
 
-  max-width: 60vw;
+  max-width: 50vw;
 
   border-radius: 5px;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
+
+
 }

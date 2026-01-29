@@ -9,6 +9,8 @@ footer {
 
   color: var(--color-text-primary);
   font-size: clamp(1.2em, 1em, 2em);
+
+  padding-top: 200px;
 }
 
 #footer-email {

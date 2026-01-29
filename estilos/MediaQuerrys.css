@@ -75,4 +75,17 @@ div#mesagem3 {
 
 }
 
+
+article#experiencias .nome-experiencia {
+
+  max-width: 90vw;
+  font-size: clamp(0.5em, 1em, 2em);
+}
+
+article#experiencias .texto-experiencia{
+
+  max-width: 90vw;
+
+}
+
 }
