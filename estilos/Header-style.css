@@ -73,13 +73,13 @@ header{
 
 #header-baixo {
     
-    background: url("../imagens/background.png"), linear-gradient(to bottom, var(--fundo-secao), var(--fundo-principal-escuro));
+    background: url("background.png"), linear-gradient(to bottom, var(--fundo-secao), var(--fundo-principal-escuro));
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
-    height: 80vh;
+    min-height: 80vh;
     padding-top: 150px;
     padding-left: 20px;
     padding-right: 20px;
