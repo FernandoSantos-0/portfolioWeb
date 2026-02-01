@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/*Header*/
+
 @media screen and (max-width: 768px) {
   #header-cima {
     flex-direction: row-reverse;
@@ -38,54 +40,70 @@
   #menu nav.open {
     right: 0;
   }
-
-  footer {
-
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 2fr ;
-
+}
+/*Main article experiencia profissional*/
+@media screen and (max-width: 768px) {
+  article#experiencias .nome-experiencia {
+    max-width: 90vw;
+    font-size: clamp(0.5em, 1em, 2em);
   }
 
-  
-div#Links-Rede-Social {
+  article#experiencias .conteudo {
+    max-width: 90vw;
+    grid-template-rows: 1fr 1fr 60% 1fr;
+  }
 
+  .conteudo .location-conteudo {
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+  }
+
+  .conteudo .site-empressa-conteudo {
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+  }
+
+  .conteudo .texto-conteudo {
+    grid-column: 1 / -1;
+    grid-row: 3 / 3;
+  }
+  .conteudo .tecnologias-conteudo {
+    grid-column: 1 / -1;
+    grid-row: 4 / 4;
+  }
+}
+
+/*Main 2*/
+@media screen and (max-width: 768px) {
+}
+/*Main 3*/
+@media screen and (max-width: 768px) {
+}
+/*Footer*/
+
+@media screen and (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+  }
+
+  div#Links-Rede-Social {
     grid-column: 1 / 1;
     grid-row: 4 / 5;
+  }
 
-}
-
-div#mesagem1 {
-
+  div#mesagem1 {
     grid-column: 1 / 1;
     grid-row: 1 / 2;
+  }
 
-}
-
-div#mesagem2 {
-
+  div#mesagem2 {
     grid-column: 1 / 1;
     grid-row: 2 / 3;
+  }
 
-}
-
-div#mesagem3 {
-
+  div#mesagem3 {
     grid-column: 1 / 1;
     grid-row: 3 / 4;
-
-}
-
-
-article#experiencias .nome-experiencia {
-
-  max-width: 90vw;
-  font-size: clamp(0.5em, 1em, 2em);
-}
-
-article#experiencias .texto-experiencia{
-
-  max-width: 90vw;
-
-}
-
+  }
 }

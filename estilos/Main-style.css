@@ -41,11 +41,11 @@ article#experiencias .nome-experiencia {
   transition: 0.5s;
 }
 
-.nome-experiencia #emoji {
+article#experiencias .nome-experiencia #emoji {
   color: var(--color-text-primary);
 }
 
-.nome-experiencia:hover #emoji{
+article#experiencias .nome-experiencia:hover #emoji {
   color: var(--color-accent-blue-hover);
 }
 
@@ -53,15 +53,13 @@ article#experiencias .caixa-experiencia[open] .nome-experiencia {
   background-color: var(--color-box-hover);
 }
 
-.conteudo {
-  overflow: hidden;
-  height: 0;
-  transition: height 0.4s ease;
-}
+article#experiencias .conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 60% 1fr;
 
-article#experiencias .texto-experiencia {
   color: var(--color-text-primary);
-  background-color: var(--fundo-cards);
+  background-color: var(--fundo-cards-azul);
 
   max-width: 50vw;
 
@@ -69,5 +67,51 @@ article#experiencias .texto-experiencia {
   margin: auto;
   padding: 20px;
 
+  overflow: hidden;
+  height: 0;
+  transition: height 0.4s ease;
+}
+
+.conteudo .location-conteudo {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  padding-bottom: 5px;
+}
+
+.conteudo .site-empressa-conteudo {
+  grid-column: 2 / -1;
+  grid-row: 1 / 1;
+  padding-bottom: 5px;
+}
+
+.conteudo .site-empressa-conteudo a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+
+  transition: 0.5s;
+}
+
+.conteudo .site-empressa-conteudo a:hover {
+  color: var(--color-accent-blue-hover);
+}
+
+.conteudo .tecnologias-conteudo {
+  display: flex;
+
+  grid-column: 1 / -1;
+  grid-row: 3 / 3;
+
+  gap: 10px;
+}
+
+.conteudo .item-conteudo {
+  background-color: var(--color-box);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.conteudo .texto-conteudo {
+  grid-column: 1 / -1;
+  grid-row: 2 / 2;
 
 }
