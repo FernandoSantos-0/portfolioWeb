@@ -50,26 +50,26 @@
 
   article#experiencias .conteudo {
     max-width: 90vw;
-    grid-template-rows: 1fr 1fr 60% 1fr;
+    grid-template-rows: auto auto auto auto;
   }
 
   .conteudo .location-conteudo {
     grid-column: 1 / -1;
-    grid-row: 1 / 1;
+    grid-row: 1 / 2;
   }
 
   .conteudo .site-empressa-conteudo {
     grid-column: 1 / -1;
-    grid-row: 2 / 2;
+    grid-row: 2 / 3;
   }
 
   .conteudo .texto-conteudo {
     grid-column: 1 / -1;
-    grid-row: 3 / 3;
+    grid-row: 3 / 4;
   }
   .conteudo .tecnologias-conteudo {
     grid-column: 1 / -1;
-    grid-row: 4 / 4;
+    grid-row: 4 / 5;
   }
 }
 

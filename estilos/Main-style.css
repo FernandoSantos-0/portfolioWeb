@@ -11,6 +11,7 @@ article#experiencias > h1 {
   color: var(--color-text-primary);
   font-size: clamp(2.5em, 2em, 3em);
   text-align: center;
+  padding-bottom: 20px;
 }
 
 article#experiencias .caixa-experiencia {
@@ -54,9 +55,12 @@ article#experiencias .caixa-experiencia[open] .nome-experiencia {
 }
 
 article#experiencias .conteudo {
+
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 60% 1fr;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+
+  justify-self: center;
 
   color: var(--color-text-primary);
   background-color: var(--fundo-cards-azul);
@@ -64,8 +68,6 @@ article#experiencias .conteudo {
   max-width: 50vw;
 
   border-radius: 5px;
-  margin: auto;
-  padding: 20px;
 
   overflow: hidden;
   height: 0;
@@ -73,15 +75,15 @@ article#experiencias .conteudo {
 }
 
 .conteudo .location-conteudo {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
-  padding-bottom: 5px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding: 5px;
 }
 
 .conteudo .site-empressa-conteudo {
   grid-column: 2 / -1;
-  grid-row: 1 / 1;
-  padding-bottom: 5px;
+  grid-row: 1 / 2;
+  padding: 5px;
 }
 
 .conteudo .site-empressa-conteudo a {
@@ -96,22 +98,30 @@ article#experiencias .conteudo {
 }
 
 .conteudo .tecnologias-conteudo {
+
   display: flex;
+  flex-flow: row wrap;
 
   grid-column: 1 / -1;
-  grid-row: 3 / 3;
+  grid-row: 3 / 4;
 
   gap: 10px;
+  padding: 5px;
+
 }
 
 .conteudo .item-conteudo {
+
   background-color: var(--color-box);
-  padding: 5px;
   border-radius: 5px;
+
 }
 
 .conteudo .texto-conteudo {
-  grid-column: 1 / -1;
-  grid-row: 2 / 2;
 
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+
+  text-align: justify;
+  padding: 10px;
 }
