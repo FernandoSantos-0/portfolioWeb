@@ -42,11 +42,11 @@ article#experiencias .nome-experiencia {
   transition: 0.5s;
 }
 
-article#experiencias .nome-experiencia #emoji {
+article#experiencias .nome-experiencia .emoji {
   color: var(--color-text-primary);
 }
 
-article#experiencias .nome-experiencia:hover #emoji {
+article#experiencias .nome-experiencia:hover .emoji {
   color: var(--color-accent-blue-hover);
 }
 
@@ -80,20 +80,20 @@ article#experiencias .conteudo {
   padding: 5px;
 }
 
-.conteudo .site-empressa-conteudo {
+.conteudo .site-empresa-conteudo {
   grid-column: 2 / -1;
   grid-row: 1 / 2;
   padding: 5px;
 }
 
-.conteudo .site-empressa-conteudo a {
+.conteudo .site-empresa-conteudo a {
   text-decoration: none;
   color: var(--color-text-primary);
 
   transition: 0.5s;
 }
 
-.conteudo .site-empressa-conteudo a:hover {
+.conteudo .site-empresa-conteudo a:hover {
   color: var(--color-accent-blue-hover);
 }
 

@@ -58,7 +58,7 @@
     grid-row: 1 / 2;
   }
 
-  .conteudo .site-empressa-conteudo {
+  .conteudo .site-empresa-conteudo {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
   }
@@ -92,17 +92,17 @@
     grid-row: 4 / 5;
   }
 
-  div#mesagem1 {
+  div#mensagem1 {
     grid-column: 1 / 1;
     grid-row: 1 / 2;
   }
 
-  div#mesagem2 {
+  div#mensagem2 {
     grid-column: 1 / 1;
     grid-row: 2 / 3;
   }
 
-  div#mesagem3 {
+  div#mensagem3 {
     grid-column: 1 / 1;
     grid-row: 3 / 4;
   }
