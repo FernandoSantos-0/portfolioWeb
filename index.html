@@ -56,14 +56,14 @@
         <details class="caixa-experiencia">
           <summary class="nome-experiencia">
             <p>Sem Experiência Previa.</p>
-            <div id="emoji"><i class="fa-solid fa-plus"></i></div>
+            <div class="emoji"><i class="fa-solid fa-plus"></i></div>
           </summary>
           <div class="conteudo">
             <h3 class="location-conteudo">
               <i class="fa-solid fa-location-dot"></i> São Bento, PB
             </h3>
 
-            <h3 class="site-empressa-conteudo">
+            <h3 class="site-empresa-conteudo">
               <i class="fa-solid fa-square-arrow-up-right"></i>
               <a href="#">Nãotrabalho.com</a>
             </h3>
@@ -88,14 +88,14 @@
         <details class="caixa-experiencia">
           <summary class="nome-experiencia">
             <p>Sem Experiência Previa.</p>
-            <div id="emoji"><i class="fa-solid fa-plus"></i></div>
+            <div class="emoji"><i class="fa-solid fa-plus"></i></div>
           </summary>
           <div class="conteudo">
             <h3 class="location-conteudo">
               <i class="fa-solid fa-location-dot"></i> São Paulo, SP
             </h3>
 
-            <h3 class="site-empressa-conteudo">
+            <h3 class="site-empresa-conteudo">
               <i class="fa-solid fa-square-arrow-up-right"></i>
               <a href="#">Nãotrabalho.com</a>
             </h3>
@@ -137,7 +137,7 @@
         </nav>
       </div>
 
-      <div id="mesagem1">
+      <div id="mensagem1">
         <p>
           Tecnologia não é nada. O que importa é que você tenha fé nas pessoas,
           que elas são basicamente boas e inteligentes e que, se você lhes der
@@ -147,105 +147,20 @@
         <h1>Steve Jobs</h1>
       </div>
 
-      <div id="mesagem2">
+      <div id="mensagem2">
         <p>A Web não apenas conecta máquinas, conecta pessoas.</p>
 
         <h1>Tim Berners-Lee</h1>
       </div>
 
-      <div id="mesagem3">
+      <div id="mensagem3">
         <p>A melhor forma de prever o futuro é criá-lo.</p>
 
         <h1>Peter Drucker</h1>
       </div>
     </footer>
 
-    <script>
-      const btnMenu = document.getElementById("btn-menu");
-      const nav = document.getElementById("item");
+    <script src="scripts/main.js"></script>
 
-      btnMenu.addEventListener("click", () => {
-        btnMenu.classList.toggle("open");
-        nav.classList.toggle("open");
-      });
-
-      nav.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          btnMenu.classList.remove("open");
-          nav.classList.remove("open");
-        });
-      });
-
-      document.addEventListener("click", (e) => {
-        const btnMenu = document.getElementById("btn-menu");
-        const nav = document.getElementById("item");
-
-        const clicouNoMenu = nav.contains(e.target);
-        const clicouNoBotao = btnMenu.contains(e.target);
-
-        if (!clicouNoMenu && !clicouNoBotao) {
-          btnMenu.classList.remove("open");
-          nav.classList.remove("open");
-        }
-      });
-
-      document.querySelectorAll(".caixa-experiencia").forEach((details) => {
-        const summary = details.querySelector("summary");
-        const content = details.querySelector(".conteudo");
-
-        let isClosing = false;
-        let isOpening = false;
-
-        summary.addEventListener("click", (e) => {
-          e.preventDefault(); // 🔑 impede o toggle automático
-
-          if (details.open && !isClosing) {
-            close();
-          } else if (!details.open && !isOpening) {
-            open();
-          }
-        });
-
-        function open() {
-          isOpening = true;
-          details.open = true;
-
-          content.style.height = "0px";
-          const height = content.scrollHeight;
-
-          requestAnimationFrame(() => {
-            content.style.height = height + "px";
-          });
-
-          content.addEventListener(
-            "transitionend",
-            () => {
-              content.style.height = "auto";
-              isOpening = false;
-            },
-            { once: true },
-          );
-        }
-
-        function close() {
-          isClosing = true;
-
-          content.style.height = content.scrollHeight + "px";
-
-          requestAnimationFrame(() => {
-            content.style.height = "0px";
-          });
-
-          content.addEventListener(
-            "transitionend",
-            () => {
-              details.open = false;
-              isClosing = false;
-            },
-            { once: true },
-          );
-        }
-      });
-    </script>
   </body>
 </html>

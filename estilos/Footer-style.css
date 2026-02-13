@@ -54,7 +54,7 @@ div#Links-Rede-Social {
   padding: 20px;
 }
 
-div#mesagem1 {
+div#mensagem1 {
   background-color: var(--cor-footer1);
 
   grid-column: 2 / 2;
@@ -68,7 +68,7 @@ div#mesagem1 {
   padding: 20px;
 }
 
-div#mesagem2 {
+div#mensagem2 {
   background-color: var(--cor-footer2);
 
   grid-column: 3 / 3;
@@ -82,7 +82,7 @@ div#mesagem2 {
   padding: 20px;
 }
 
-div#mesagem3 {
+div#mensagem3 {
   background-color: var(--cor-footer3);
 
   grid-column: 3 / 3;
