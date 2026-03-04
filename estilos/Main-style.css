@@ -125,3 +125,25 @@ article#experiencias .conteudo {
   text-align: justify;
   padding: 10px;
 }
+
+/* Conhecimento */
+
+.conhecimento-box{
+
+  color: white;
+  border: 2px solid white;
+  font-size: clamp(1em, 0.5em, 1.5em);
+
+  width: 90vw;
+
+  margin: auto;
+
+}
+
+.conhecimento-box h1 {
+  text-align: center;
+}
+
+.conhecimento-box p {
+  text-align: center;
+}
