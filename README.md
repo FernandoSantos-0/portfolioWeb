@@ -1,35 +1,26 @@
-# portfolioWeb
+# 🚀 Meu Portfólio Pessoal
 
-Este projeto é uma página de portfólio pessoal desenvolvida para apresentar projetos, habilidades e informações de contato.
+Bem-vindo ao repositório do meu portfólio! Este projeto foi desenvolvido para centralizar minha trajetória, exibir projetos destacados e facilitar o contato profissional.
 
-## Sugestões de melhorias
+---
 
-### Conteúdo
-- Substituir os textos de exemplo por experiências e projetos reais (incluindo stack, impacto e links).
-- Adicionar uma seção de projetos em destaque com imagem, descrição curta e botão para repositório/demo.
-- Incluir um resumo profissional objetivo no topo com foco em propostas de valor.
+## 💻 Sobre o Projeto
 
-### Acessibilidade
-- Garantir contraste adequado entre texto e fundo em todas as seções.
-- Adicionar textos alternativos descritivos para imagens relevantes.
-- Revisar hierarquia de títulos (`h1`, `h2`, `h3`) para navegação por leitores de tela.
+O objetivo deste portfólio é oferecer uma experiência de usuário fluida e responsiva, demonstrando minhas competências técnicas em desenvolvimento web. A interface foi pensada para ser moderna.
 
-### SEO e compartilhamento
-- Incluir `meta description` e tags Open Graph/Twitter Card para melhor prévia em redes sociais.
-- Definir favicon e título consistente em todas as páginas (caso o site cresça para múltiplas rotas).
-- Registrar o domínio no Google Search Console para monitorar indexação.
+### Principais funcionalidades:
 
-### Performance
-- Otimizar imagens (WebP/AVIF) e usar versões dimensionadas para diferentes telas.
-- Considerar pré-carregamento de fontes e recursos críticos de estilo.
-- Minificar CSS/JS em ambiente de produção.
+* **Apresentação Pessoal:** Um resumo sobre quem eu sou e meus objetivos.
+* **Vitrine de Projetos:** Exibição detalhada dos meus principais trabalhos.
+* **Seção de Habilidades:** Lista técnica de tecnologias e ferramentas.
+* **Formulário de Contato:** Integração para mensagens diretas.
+* **Design Responsivo:** Adaptado para dispositivos móveis, tablets e desktop.
 
-### Experiência e conversão
-- Trocar links `#` por URLs reais (LinkedIn, GitHub, e-mail com `mailto:`).
-- Adicionar CTA principal claro (ex.: “Falar sobre projeto”).
-- Inserir formulário simples de contato com validação básica.
+---
 
-### Qualidade do código
-- Mover o JavaScript inline para um arquivo dedicado (`scripts/main.js`) para melhorar manutenção.
-- Padronizar nomenclatura de classes/IDs e corrigir pequenos erros ortográficos.
-- Adicionar um formatador/linter (ex.: Prettier + Stylelint) no fluxo de desenvolvimento.
+## 🛠 Tecnologias Utilizadas
+
+* **HTML5**
+* **CSS3**
+* **JavaScript (Vanilla)**
+* **Git/GitHub**
