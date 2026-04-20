@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   ARQUIVO MESTRE - IMPORTAÇÕES
+   ========================================================================== */
+
+/* 1. CONFIGURAÇÕES GLOBAIS (Variáveis e Resets) */
+
+@import url("./base/global-settings.css");
+
+/* 2. COMPONENTES (Peças reutilizáveis - Se você criou a pasta) */
+@import url("./components/nav-menu.css");
+
+/* 3. LAYOUT (Estrutura das seções principais) */
+@import url("./layout/header.css");
+@import url("./layout/main-content.css");
+@import url("./layout/footer.css");
+
+/* 4. RESPONSIVIDADE (Media Queries) */
+@import url("./base/mediaquerrys.css");
