@@ -33,6 +33,6 @@
 }
 
 body {
-    background-color: var(--fundo-principal);
+    background-color: var(--fundo-secundario);
     font-family: sans-serif,geometric;
 }

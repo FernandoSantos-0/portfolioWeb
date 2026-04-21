@@ -59,3 +59,14 @@
     }
 }
 
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .footer__contact, .card1, .card2, .card3 {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
