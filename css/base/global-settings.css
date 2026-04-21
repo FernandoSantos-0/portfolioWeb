@@ -3,7 +3,7 @@
 :root {
     /* Tons de Base (Fundo) */
     --fundo-principal: #0d1117;   /* Fundo geral mais profundo */
-    --fundo-secundario: #161b22;  /* Seções e áreas de destaque */
+    --fundo-secundario: #18212e;  /* Seções e áreas de destaque 161b22*/
     --fundo-card: #21262d;        /* Cards e elementos flutuantes */
 
     /* Tons de Texto */
@@ -34,4 +34,5 @@
 
 body {
     background-color: var(--fundo-principal);
+    font-family: sans-serif,geometric;
 }
