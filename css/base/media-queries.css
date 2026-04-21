@@ -1,1 +1,30 @@
 @charset "UTF-8";
+
+@media (max-width: 768px){
+
+    .header__top {
+
+        flex-direction: row-reverse;
+
+    }
+
+    .nav__list{
+
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        background: #c74141;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-menu{
+
+        display: grid;
+
+    }
+
+
+}

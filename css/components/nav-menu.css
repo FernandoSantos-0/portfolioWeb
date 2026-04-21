@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
-.nav {
-    display: block;
-}
-
-.nav .nav__list {
+.nav__list {
 
     list-style: none;
 
@@ -20,9 +16,9 @@
 
 }
 
-.nav .nav__list li {
+.nav__list li {
 
-    position: relative;
+    letter-spacing: 1px;
 
 }
 
@@ -40,5 +36,19 @@
 .nav a:hover {
 
     color: var(--cor-destaque-hover);
+    
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
     
 }
