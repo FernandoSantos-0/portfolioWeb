@@ -11,8 +11,8 @@
     --texto-secundario: #8b949e;  /* Cinza para descrições e detalhes */
 
     /* Cores de Destaque (Accent) */
-    --cor-destaque: #58a6ff;      /* Azul principal para links e ícones */
-    --cor-destaque-hover: #79c0ff;/* Azul mais claro para interação */
+    --cor-destaque: #f3eeee;      /* Azul principal para links e ícones */
+    --cor-destaque-hover: #6a7580;/* Azul mais claro para interação */
     --cor-acao: #7d46ff;          /* Um roxo vibrante*/
     --cor-acao-hover: #9d71ff;    /* Roxo mais claro para botões */
 

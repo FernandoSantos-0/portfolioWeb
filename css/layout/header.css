@@ -7,9 +7,12 @@ header {
     background: linear-gradient(
         to bottom, 
         var(--fundo-principal), 
-        var( --fundo-secundario)
-    );
-    background-image: url("../../assets/img/background.png");
+        var( --fundo-secundario)),
+        url("../../assets/img/background2.jpg");
+    ;
+   
+
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,20 +52,23 @@ header {
     
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+
     align-items: center; 
     text-align: center;
+
     padding: 20px;
+    padding-top: 10vh;
     color: var(--texto-principal);
+    
 }
 
 .header__content h1 {
-    font-size: clamp(4rem, 5vw, 6rem);
+    font-size: clamp(2rem, 3vw, 4rem);
     margin-bottom: 0.5rem;
 }
 
 .header__content h3 {
-    font-size: clamp(2rem, 2.5vw, 3rem);
+    font-size: clamp(1rem, 1.5vw, 2rem);
     font-weight: 400;
     max-width: 700px; 
     line-height: 1.4;
