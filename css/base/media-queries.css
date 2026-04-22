@@ -30,6 +30,13 @@
         left: 0;
     }
 
+    .mobile-menu.active{
+        position: fixed;
+        top: 25px;
+        left: 5%;
+        margin: 0;
+    }
+
     .mobile-menu {
 
         display: block;
