@@ -7,8 +7,9 @@ footer {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: auto auto;
-    min-height: 70vh;
+    min-height: 50vh;
 
+    transition: 0.5s
 }
 
 .footer__contact {
@@ -76,7 +77,7 @@ footer {
 .card1,.card2,.card3 {
 
     color: var(--texto-principal);
-    font-size: clamp(0.5rem , 1rem , 2rem);
+    font-size: smaller;
 
     display: flex;
     flex-direction: column;
@@ -145,6 +146,6 @@ footer {
 
 
     line-height: 1;
-    padding-top: 15px;
+    padding-top: 10px;
 
 }
