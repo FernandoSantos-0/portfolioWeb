@@ -39,14 +39,12 @@ footer {
 
     display: flex;
     flex-direction: column;
-
+    align-items: flex-start;
     gap: 20px;
 
 }
 
 .footer__address > a {
-
-    align-self: flex-start;
     box-shadow: inset 0px -7px 0px var(--cor-acao);
     transition: 0.5s;
 }
@@ -87,6 +85,10 @@ footer {
 
     text-align: center;
 
+    overflow: hidden;
+    position: relative;
+    padding: 80px 40px;
+    
 }
 
 .card1 {
@@ -119,5 +121,30 @@ footer {
 
     padding: 10px;
     gap: 20px;
+
+}
+
+.card1::before, .card2::before, .card3::before {
+    content: "“";
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    
+    width: 60px; 
+    height: 60px;
+    background-color: #00000000;
+    
+    color: rgba(255, 255, 255, 0.3); 
+    font-size: 6rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    line-height: 1;
+    padding-top: 15px;
 
 }
