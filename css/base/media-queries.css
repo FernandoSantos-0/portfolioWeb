@@ -69,10 +69,16 @@
 @media (max-width: 768px) {
     footer {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 1fr 1fr 3fr;
+        min-height: 100vh;
     }
     
-    .footer__contact, .card1, .card2, .card3 {
+    .footer__contact {
+        grid-column: 1;
+        grid-row: 4 / 5;
+
+    } 
+    .card1, .card2, .card3 {
         grid-column: 1;
         grid-row: auto;
     }
