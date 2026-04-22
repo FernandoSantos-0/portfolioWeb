@@ -7,7 +7,7 @@ footer {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: auto auto;
-    min-height: 80vh;
+    min-height: 70vh;
 
 }
 
